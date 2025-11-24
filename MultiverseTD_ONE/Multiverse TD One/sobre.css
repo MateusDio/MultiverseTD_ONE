@@ -154,23 +154,30 @@ body {
 
 .rodape {
     background: #7d05b5;
-    padding: 24px 20px;
-    margin-top: auto;
-    border-radius: 8px;
+    color: #fff;
+    padding: 40px 20px 24px;
     width: 100%;
+    margin-top: auto;
 }
 
 .conteudo-rodape {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     gap: 20px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .coluna-rodape {
-    min-width: 180px;
+    min-width: 220px;
+}
+
+.rodape-inferior {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 @media (max-width:900px) {
