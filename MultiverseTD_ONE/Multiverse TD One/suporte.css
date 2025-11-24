@@ -1,83 +1,134 @@
 @import url("style.css");
 
-/* estilos específicos da página Suporte */
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 .conteudo-suporte {
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 20px;
-  flex: 1;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    flex: 1;
 }
 
 .intro {
-  background: rgba(255,255,255,0.03);
-  padding: 22px;
-  border-radius: 10px;
-  margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 18px;
 }
 
-.intro h1 { font-size: 36px; margin-bottom:6px; }
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
 
 .bloco {
-  margin: 18px 0;
-  background: rgba(255,255,255,0.02);
-  padding: 16px;
-  border-radius: 10px;
+    margin: 18px 0;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 16px;
+    border-radius: 10px;
 }
 
-.bloco h2 { margin-bottom:10px; }
+.bloco h2 {
+    margin-bottom: 10px;
+}
 
-/* Formulário */
-.form-relatorio label { display:block; margin-top:10px; margin-bottom:6px; color: rgba(255,255,255,0.9); }
+
+.form-relatorio label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .form-relatorio input[type="text"],
 .form-relatorio input[type="email"],
 .form-relatorio select,
 .form-relatorio textarea,
 .form-relatorio input[type="file"] {
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.07);
-  background: rgba(255,255,255,0.02);
-  color: #fff;
-  outline: none;
-  transition: border .12s;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.02);
+    color: #fff;
+    outline: none;
+    transition: border .12s;
 }
+
 .form-relatorio input:focus,
 .form-relatorio textarea:focus,
 .form-relatorio select:focus {
-  border-color: rgba(255,255,255,0.18);
+    border-color: rgba(255, 255, 255, 0.18);
 }
 
-/* Ações do formulário */
-.acoes { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
 
-.btn { display:inline-block; padding:10px 18px; border-radius:28px; text-decoration:none; font-weight:700; background:rgba(255,255,255,0.12); color:#fff; }
-.btn-primario { background:#fff; color:#1b0b3a; }
+.acoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
 
-/* FAQ details */
-details { background: transparent; padding:10px 12px; border-radius:8px; margin-bottom:8px; }
-details summary { cursor: pointer; list-style: none; font-weight:600; }
-details p { margin-top:8px; color: rgba(255,255,255,0.85); }
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
 
-/* Responsivo */
+.btn-primario {
+    background: #fff;
+    color: #1b0b3a;
+}
+
+
+details {
+    background: transparent;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+details summary {
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+}
+
+details p {
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
 @media (max-width:900px) {
-  .conteudo-suporte { margin: 18px; padding: 14px; }
-  .intro h1 { font-size: 28px; }
-}A@import url(style.css);
+    .conteudo-suporte {
+        margin: 18px;
+        padding: 14px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html
-body {
+html body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background: linear-gradient(180deg, #08122a 0%, #0f1630 100%);
+    background: linear-gradient(90deg, #e1307f 0%, #710e3a 50%, #42031f 100%);
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -119,7 +170,7 @@ body {
     max-width: 1100px;
     margin: 30px auto;
     padding: 20px;
-    flex: 1; 
+    flex: 1;
 }
 
 
@@ -171,7 +222,7 @@ body {
 
 .btn-primario {
     background: #fff;
-    color: #1b0b3a;
+    color: #da299f;
 }
 
 .bloco {
@@ -219,32 +270,58 @@ body {
 }
 
 
-.rodape {
-    background: #7d05b5;
+.rodape,
+.rodape .conteudo-rodape,
+.rodape .conteudo-rodape * {
+    color: rgba(255, 255, 255, 0.92) !important;
+}
+
+
+.conteudo-rodape a {
+    color: #ffd6ea !important;
+
+}
+
+.rodape p,
+.rodape h3 {
     color: #fff;
-    padding: 40px 20px 24px;
-    width: 100%;
-    margin-top: auto;
 }
 
-.conteudo-rodape {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.rodape a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
 }
 
-.coluna-rodape {
-    min-width: 220px;
+.rodape a:hover{
+ text-decoration: underline;
 }
 
-.rodape-inferior {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
+.conteudo-suporte a,
+.bloco a,
+.conteudo-sobre a {
+  color: #ffd6ea; /* cor dos links - alterar aqui */
+  text-decoration: none;
+}
+
+.conteudo-suporte a:hover,
+.bloco a:hover,
+.conteudo-sobre a:hover,
+.conteudo-suporte a:focus,
+.bloco a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.rodape-inferior{
+     border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+input::placeholder {
+    color: #f386ce;
+}
+
+textarea::placeholder{
+    color: #f386ce
 }
 
 @media (max-width:900px) {
