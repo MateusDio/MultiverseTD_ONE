@@ -8,7 +8,7 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background: radial-gradient(circle at top left, #a43ed7 0%, #550d79 50%, #190125 100%);
+    background: radial-gradient(circle at top left, #15001f 0%, #50106f 50%, #8f42b5 100%);
     min-height: 100vh;
 }
 
@@ -188,6 +188,69 @@ div,
     margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.coluna-rodape a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.coluna-rodape a:hover{
+    text-decoration: underline;
+    color: #611aa4;
+}
+
+
+.nav a {
+    position: relative;
+}
+
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+
+    transform: scaleX(0);
+    transition: transform .25s ease;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.nav a .desc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%; 
+    margin-top: 8px;
+
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: opacity .25s ease, margin-top .25s ease;
+    pointer-events: none;
+}
+
+.nav a:hover .desc {
+    opacity: 1;
+    margin-top: 4px;
+}
+
+.nav a.active::after {
+    transform: scaleX(1);
 }
 
 @media (max-width:900px) {

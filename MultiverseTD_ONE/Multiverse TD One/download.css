@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    background: radial-gradient(circle at 10% 20%, #6322d2 0%, #480987 35%, #05001d 100%);
+    background: radial-gradient(circle at 10% 20%, #4128b4 0%, #301275 35%, #000000 100%);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -170,8 +170,19 @@ div {
     flex-wrap: wrap;
 }
 
-.coluna-rodape {
+.coluna-rodape a {
     min-width: 220px;
+    color: white;
+    text-decoration: none;
+}
+
+.coluna-rodape{
+    min-width: 220px;
+}
+
+.coluna-rodape a:hover {
+text-decoration: underline;
+color: #611aa4;
 }
 
 .rodape-inferior {
@@ -179,6 +190,66 @@ div {
     margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bloco a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.bloco a:hover{
+    text-decoration: underline;
+}
+
+.nav a {
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+
+    transform: scaleX(0);
+    transition: transform .25s ease;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.nav a .desc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%; 
+    margin-top: 8px;
+
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: opacity .25s ease, margin-top .25s ease;
+    pointer-events: none;
+}
+
+.nav a:hover .desc {
+    opacity: 1;
+    margin-top: 4px;
+}
+
+.nav a.active::after {
+    transform: scaleX(1);
 }
 
 @media (max-width:900px) {

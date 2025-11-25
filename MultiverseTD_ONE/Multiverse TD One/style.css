@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    background: radial-gradient(circle at 10% 20%, #e20f6e 0%, #c21fbc 35%, #4c096d 100%);
+    background: radial-gradient(circle at 10% 20%, #e20f6e 0%, #c21fbc 35%, #1b096d 100%);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -56,6 +56,55 @@ body {
     border-radius: 2px;
 }
 
+.nav a {
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+
+    transform: scaleX(0);
+    transition: transform .25s ease;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav a .desc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 8px;
+
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: opacity .25s ease, margin-top .25s ease;
+    pointer-events: none;
+}
+
+.nav a:hover .desc {
+    opacity: 1;
+    margin-top: 4px;
+}
+
+
+.nav a.active::after {
+    transform: scaleX(1);
+}
 
 .tela-inicial {
     flex: 1;
@@ -71,6 +120,7 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: auto;
+    justify-content: space-between;
 }
 
 .conteudo2 {
@@ -119,7 +169,12 @@ h1 {
 .img {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    height: 500px;
+    width: 120px;
+    transform: translateY(-43px);
+
 }
 
 .hero-right img {
@@ -156,7 +211,6 @@ h1 {
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
-
 
 
 @media (max-width:900px) {

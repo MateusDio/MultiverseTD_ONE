@@ -273,13 +273,7 @@ html body {
 .rodape,
 .rodape .conteudo-rodape,
 .rodape .conteudo-rodape * {
-    color: rgba(255, 255, 255, 0.92) !important;
-}
-
-
-.conteudo-rodape a {
-    color: #ffd6ea !important;
-
+    color: rgba(255, 255, 255, 0.92);
 }
 
 .rodape p,
@@ -299,7 +293,7 @@ html body {
 .conteudo-suporte a,
 .bloco a,
 .conteudo-sobre a {
-  color: #ffd6ea; /* cor dos links - alterar aqui */
+  color: #ffd6ea; 
   text-decoration: none;
 }
 
@@ -310,6 +304,16 @@ html body {
 .bloco a:focus {
   color: #ffffff;
   text-decoration: underline;
+}
+
+
+.coluna-rodape a{
+    color: white;
+}
+
+.coluna-rodape a:hover {
+text-decoration: underline;
+color: #611aa4;
 }
 
 .rodape-inferior{
@@ -323,6 +327,57 @@ input::placeholder {
 textarea::placeholder{
     color: #f386ce
 }
+
+.nav a {
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+
+    transform: scaleX(0);
+    transition: transform .25s ease;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav a .desc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 8px;
+
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: opacity .25s ease, margin-top .25s ease;
+    pointer-events: none;
+}
+
+.nav a:hover .desc {
+    opacity: 1;
+    margin-top: 4px;
+}
+
+
+.nav a.active::after {
+    transform: scaleX(1);
+}
+
 
 @media (max-width:900px) {
     .video-wrapper iframe {
