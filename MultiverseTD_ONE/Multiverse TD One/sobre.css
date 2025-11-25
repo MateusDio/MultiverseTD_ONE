@@ -8,7 +8,7 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background: radial-gradient(circle at top left, #7f2ea8 0%, #3b0655 50%, #190125 100%);
+    background: radial-gradient(circle at top left, #a43ed7 0%, #550d79 50%, #190125 100%);
     min-height: 100vh;
 }
 

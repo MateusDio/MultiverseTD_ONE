@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    background: radial-gradient(circle at 10% 20%, #4025b0 0%, #1d0775 35%, #05001d 100%);
+    background: radial-gradient(circle at 10% 20%, #6322d2 0%, #480987 35%, #05001d 100%);
     color: #fff;
     display: flex;
     flex-direction: column;
