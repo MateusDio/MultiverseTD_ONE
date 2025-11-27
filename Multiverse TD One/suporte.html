@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Suporte — Multiverse TD</title>
+    <link rel="stylesheet" href="suporte.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/Logo - Maior.png">
+</head>
+
+
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <ul>
+                <li class="logo-item">
+                    <a href="index.html">
+                        <img src="img/Logo - Maior.png" class="logo-header" alt="Multiverse TD One">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Início
+                        <span class="desc">Página inicial</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre.html">
+                        Sobre
+                        <span class="desc">Informações do projeto</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="suporte.html" class="active">
+                        Suporte
+                        <span class="desc">Ajuda e bugs</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-suporte">
+        <section class="intro">
+            <h1>Suporte — Multiverse TD</h1>
+            <p class="subtitulo">Ajuda, bugs e perguntas frequentes. Suporte rápido aqui.</p>
+        </section>
+
+        <section id="faq" class="bloco">
+            <h2>Perguntas frequentes (FAQ)</h2>
+            <details>
+                <summary>Como instalo o jogo?</summary>
+                <p>Baixe o pacote na página de downloads, extraia e execute o instalador.
+                <p>Consulte o guia de instalação para detalhes.</p>
+                </p>
+            </details>
+            <details>
+                <summary>O jogo roda no meu PC?</summary>
+                <p>Verifique os requisitos mínimos na página Download → Requisitos.
+                <p>Se tiver dúvidas, envie seu relatório de sistema.</p>
+                </p>
+            </details>
+            <details>
+                <summary>Posso jogar em coop?</summary>
+                <p>Não — No momento desenvolvemos apenas para 1 player.
+                <p>
+                    Futuramente iremos implementar.
+                </p>
+                </p>
+            </details>
+        </section>
+
+        <section id="reportar" class="bloco">
+            <h2>Reportar bug / enviar feedback</h2>
+            <p>Use o formulário abaixo para enviar um relatório rápido. Anexe logs se possível.</p>
+
+            <form id="form-relatorio" action="#" method="post" enctype="multipart/form-data" class="form-relatorio">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+                <label for="email">E‑mail</label>
+                <input id="email" name="email" type="email" placeholder="Seu e-mail aqui" required>
+
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria">
+                    <option>Bug</option>
+                    <option>Feedback</option>
+                    <option>Suporte técnico</option>
+                </select>
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" rows="6" placeholder="Descreva o problema ou sugestão"
+                    required></textarea>
+
+                <label for="logs">Anexar logs / screenshot (opcional)</label>
+                <input id="logs" name="logs" type="file" accept=".txt,.log,.png,.jpg">
+
+                <div class="acoes">
+                    <button type="submit" class="btn btn-primario">Enviar relatório</button>
+                    <a class="btn"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=multiversetdonefaq@gmail.com">Enviar por
+                        e‑mail</a>
+                </div>
+            </form>
+        </section>
+
+        <section id="guias" class="bloco">
+            <h2>Guias úteis</h2>
+            <ul>
+                <li><a href="docs/instalacao.html">Guia de instalação</a></li>
+                <li><a href="docs/solucao-problemas.html">Solução de problemas</a></li>
+            </ul>
+        </section>
+
+        <section id="contato" class="bloco">
+            <h2>Contato e comunidade</h2>
+            <p>Suporte por e‑mail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=multiversetdonefaq@gmail.com"
+                    target="_blank">
+                    multiversetdonefaq@gmail.com
+                </a>
+            </p>
+            <p>
+
+            <p>GitHub do projeto: <a href="https://github.com/MateusDio/MultiverseTD_ONE" target="_blank">GitHub do
+                    Projeto
+                </a>
+            </p>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <div class="conteudo-rodape">
+            <div class="coluna-rodape">
+                <h3>Multiverse TD</h3>
+                <p>© 2025 Multiverse TD</p>
+            </div>
+            <div class="coluna-rodape">
+                <h3>Ajuda</h3>
+                <p><a href="sobre.html">Sobre</a> · <a href="suporte.html">Suporte</a></p>
+            </div>
+        </div>
+        <div class="rodape-inferior">Todos os direitos reservados</div>
+    </footer>
+
+    <script>
+        document.getElementById('form-relatorio')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Relatório enviado (simulado). Você pode integrar com back-end ou serviço de e-mail.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
