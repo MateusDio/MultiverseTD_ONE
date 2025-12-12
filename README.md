@@ -17,20 +17,21 @@ Consulte pré-requisitos para saber o que você precisa para implantar o projeto
 - **v0.1.0** – (19/11/2025)  
   - Primeiro modelo do jogo.
 ---
-📋 Pré-requisitos
+## 📋 Pré-requisitos
 Para usar esta aplicação, você deve ter o Roblox instalado em seu dispositivo e as seguintes configurações mínimas:
 OS: Windows 10 64-bit
 CPU: Intel i3
 RAM: 4 GB
 GPU: GTX 660 / equivalente
-🛠️ Construído com
+## 🛠️ Construído com
 Roblox Studio & Java Script
-📌 Versão
+## 📌 Versão
  **v1.0.0**
-✒️ Autores
+## ✒️ Autores
 Rafaela Lima 
 Mateus Diolinda
 📄 Licença
 Este projeto está sob licença - consulte o arquivo LICENSE.md para detalhes.
+
 
 
