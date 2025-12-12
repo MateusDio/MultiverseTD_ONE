@@ -133,13 +133,14 @@ div {
 }
 
 .galeria {
+    height: auto;
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
 }
 
 .galeria img {
-    width: 200px;
+    width: 500px;
     border-radius: 8px;
     object-fit: cover;
 }
