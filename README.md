@@ -1,6 +1,6 @@
 Multiverse TD One
 Um jogo no estilo The farmer was Replaced, feito em Luau. Desenvolvido para o aprendizado divertido e interativo com seus usuários. 
-🚀 Beginning 
+## 🚀 Beginning 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de uso ou teste.
 Consulte pré-requisitos para saber o que você precisa para implantar o projeto.
 
@@ -32,4 +32,5 @@ Rafaela Lima
 Mateus Diolinda
 📄 Licença
 Este projeto está sob licença - consulte o arquivo LICENSE.md para detalhes.
+
 
